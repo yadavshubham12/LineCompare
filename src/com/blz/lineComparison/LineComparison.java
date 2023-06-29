@@ -1,5 +1,6 @@
 package com.blz.lineComparison;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class LineComparison {
@@ -43,5 +44,13 @@ public class LineComparison {
         } else {
             System.out.println("Both lines are not equal");
         }
+    }
+    public void checkEqualityUsingCompareTo( double line1, double line2){
+
+        int compare = line2.compareTo(line1);
+        if (compare > 0){
+            System.out.println("Line one is greater than line2");
+        }
+        else System.out.println("Line two is greater than line1");
     }
 }
